@@ -1,1 +1,19 @@
-<p>movies works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 my-3" *ngFor="let movie of movies">
+      <div class="card">
+        <img
+          src="https://www.themoviedb.org/t/p/w220_and_h330_face/3bhkrj58Vtu7enYsRolD1fZdja1.jpg"
+          class="card-img-top image"
+          alt="..."
+        />
+        <div class="card-body">
+          <a target="blank" href="details" class="card-details">
+            <h5 class="card-title">{{ movie.original_title }}</h5></a
+          >
+          <h6 class="card-date">{{ movie.release_date | date : "short" }}</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
