@@ -10,6 +10,7 @@ import { SharedModule } from './shared/shared.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthModule } from './auth/auth.module';
 import { MoviesModule } from './movies/movies.module';
+// import { CutstrPipe } from './pipes/cutstr.pipe';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { MoviesModule } from './movies/movies.module';
     MoviesPipe,
     DetailsPipe,
     HomeComponent,
+    // CutstrPipe,
   ],
   imports: [
     BrowserModule,

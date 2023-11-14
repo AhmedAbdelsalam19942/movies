@@ -9,6 +9,7 @@ import { WhishlistComponent } from './users/whishlist/whishlist.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'movies', component: MoviesComponent },
@@ -16,6 +17,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'whislist', component: WhishlistComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'movie/:id', component: DetailsComponent },
+
 ];
 
 @NgModule({
